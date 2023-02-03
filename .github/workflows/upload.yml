@@ -36,9 +36,9 @@ jobs:
     - name: Upload Artifacts 
       uses: actions/upload-artifact@v3
       with:
-        name: tarball-artifact
+        name: dist-artifacts.zip
         path: |
-          dist/*.tar.gz
+          dist/*
 
     #- name: Publish a Python distribution to PyPI
     #  uses: pypa/gh-action-pypi-publish@release/v1
