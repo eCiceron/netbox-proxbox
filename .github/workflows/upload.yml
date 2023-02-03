@@ -1,8 +1,10 @@
-name: Upload Python Package
+name: Upload Package Artifacts
 
 on:
   push:
     branches: [ develop, main ]
+  pull_request:
+    branches: [ main, develop ]
   release:
     types:
       - created
